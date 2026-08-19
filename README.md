@@ -23,6 +23,7 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0001-two-sum](https://github.com/scabber098/scabber098/tree/main/0001-two-sum/) | Easy |
+| [0012-integer-to-roman](https://github.com/scabber098/scabber098/tree/main/0012-integer-to-roman/) | Medium |
 | [1386-cinema-seat-allocation](https://github.com/scabber098/scabber098/tree/main/1386-cinema-seat-allocation/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
@@ -37,4 +38,12 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0011-container-with-most-water](https://github.com/scabber098/scabber098/tree/main/0011-container-with-most-water/) | Medium |
+## Math
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0012-integer-to-roman](https://github.com/scabber098/scabber098/tree/main/0012-integer-to-roman/) | Medium |
+## String
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0012-integer-to-roman](https://github.com/scabber098/scabber098/tree/main/0012-integer-to-roman/) | Medium |
 <!---LeetCode Topics End-->
