@@ -53,6 +53,7 @@
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0010-regular-expression-matching](https://github.com/scabber098/scabber098/tree/main/0010-regular-expression-matching/) | Hard |
 | [0012-integer-to-roman](https://github.com/scabber098/scabber098/tree/main/0012-integer-to-roman/) | Medium |
 | [0013-roman-to-integer](https://github.com/scabber098/scabber098/tree/main/0013-roman-to-integer/) | Easy |
 | [0014-longest-common-prefix](https://github.com/scabber098/scabber098/tree/main/0014-longest-common-prefix/) | Easy |
@@ -69,6 +70,7 @@
 ## Recursion
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0010-regular-expression-matching](https://github.com/scabber098/scabber098/tree/main/0010-regular-expression-matching/) | Hard |
 | [0021-merge-two-sorted-lists](https://github.com/scabber098/scabber098/tree/main/0021-merge-two-sorted-lists/) | Easy |
 ## Divide and Conquer
 | Problem Name | Difficulty |
@@ -102,4 +104,8 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0014-longest-common-prefix](https://github.com/scabber098/scabber098/tree/main/0014-longest-common-prefix/) | Easy |
+## Dynamic Programming
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0010-regular-expression-matching](https://github.com/scabber098/scabber098/tree/main/0010-regular-expression-matching/) | Hard |
 <!---LeetCode Topics End-->
