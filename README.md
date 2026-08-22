@@ -50,6 +50,7 @@
 | [0012-integer-to-roman](https://github.com/scabber098/scabber098/tree/main/0012-integer-to-roman/) | Medium |
 | [0013-roman-to-integer](https://github.com/scabber098/scabber098/tree/main/0013-roman-to-integer/) | Easy |
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/scabber098/scabber098/tree/main/3116-kth-smallest-amount-with-single-denomination-combination/) | Hard |
+| [3622-check-divisibility-by-digit-sum-and-product](https://github.com/scabber098/scabber098/tree/main/3622-check-divisibility-by-digit-sum-and-product/) | Easy |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
