@@ -1,18 +1,34 @@
-# 💫 About Me:
-🔭 I'm currently working on AI and full-stack web development<br>👯 I'm looking to collaborate on AI and full-stack projects<br>🤝 I'm looking for help with scaling AI apps in production<br>🌱 I'm currently learning RAG and vector databases<br>💬 Ask me about React, Next.js, Firebase, or AI/RAG<br>⚡ Fun fact: I enjoy turning ideas into working products end to end
+<div align="center">
 
+# 👋 Hey, I'm Kunwardeep Singh
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Jenkins](https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Blender](https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.shion.dev/api?username=scabber098&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-<a href="https://git.io/streak-stats"><img src="./profile/streak.svg" alt="GitHub Streak" /></a><br/>
-![](https://github-readme-stats.shion.dev/api/top-langs/?username=scabber098&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=900&color=38BDF8&center=true&vCenter=true&width=650&lines=CSE+Student+%7C+Full-Stack+Developer;AI+Enthusiast+%7C+Problem+Solver;Building+Ideas+Into+Real+Projects" />
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=scabber098&theme=radical&no-frame=false&no-bg=true&margin-w=4)
+<br/>
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=scabber098&limit=5&theme=dark&combine_all_yearly_contributions=true)
+<a href="https://www.linkedin.com/in/kunwardeep-singh-dev">
+  <img src="https://img.shields.io/badge/LinkedIn-38BDF8?style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+<a href="mailto:kunwardeepsingh797@gmail.com">
+  <img src="https://img.shields.io/badge/Email-38BDF8?style=for-the-badge&logo=gmail&logoColor=white" />
+</a>
+
+<a href="https://leetcode.com/u/kunwar_7/">
+  <img src="https://img.shields.io/badge/LeetCode-38BDF8?style=for-the-badge&logo=leetcode&logoColor=white" />
+</a>
+
+<img src="https://komarev.com/ghpvc/?username=scabber098&label=Profile%20Views&color=38BDF8&style=for-the-badge" />
+
+</div>
+
+---
+
+## 👨‍💻 About Me
+
+```text
+🎓 CSE Student passionate about technology and problem solving
+🤖 Exploring Artificial Intelligence and modern AI applications
+🌐 Building full-stack web applications and real-time systems
+🧠 Practicing Data Structures & Algorithms on LeetCode
+🚀 Interested in turning ideas into useful products
