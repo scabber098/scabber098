@@ -1,78 +1,160 @@
 <div align="center">
 
-<!-- PROFILE IMAGE -->
-<img src="assets/portrait.svg" width="300" alt="Kunwardeep Singh coding illustration">
+<img src="assets/avatar.png" width="200" alt="Kunwardeep Singh" />
 
-<br>
+# Kunwardeep Singh
 
-<a href="https://github.com/scabber098">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=26&duration=2600&pause=900&color=39D353&center=true&vCenter=true&width=600&lines=Kunwardeep+Singh;Computer+Science+Engineering+Student;Competitive+Programmer;Web+Developer+%7C+Problem+Solver" alt="typing banner">
-</a>
+Computer Science Engineering Student
+Competitive Programmer
+Web Developer | Problem Solver
 
-<br>
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/kunwardeep-singh-dev)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kunwardeepsingh797@gmail.com)
+[![LeetCode](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/kunwar_7)
 
-<a href="https://www.linkedin.com/in/kunwardeep-singh-dev">
-  <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-</a>
-
-<a href="mailto:kunwardeepsingh797@gmail.com">
-  <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
-</a>
-
-<a href="https://leetcode.com/u/kunwar_7/">
-  <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode">
-</a>
-
-<br><br>
-
-<img src="https://komarev.com/ghpvc/?username=scabber098&style=flat&color=39d353&label=profile+views" alt="profile views">
+![Profile Views](https://komarev.com/ghpvc/?username=scabber098&style=for-the-badge&color=1a1a2e&label=profile+views)
 
 </div>
 
 ---
 
-## `~/` whoami
+## ~/ whoami
 
-```console
+```
 $ cat about.txt
-Hi, I'm Kunwardeep Singh, a Computer Science Engineering student passionate about programming, problem solving, web development, and building useful projects.
+```
 
-Currently improving my Data Structures & Algorithms skills
-Interested in Web Development and Software Development
-Regularly solving problems on LeetCode
-Learning new technologies and building projects
-LinkedIn: kunwardeep-singh-dev
-Email: kunwardeepsingh797@gmail.com
-Fun fact: I enjoy solving challenging problems and turning ideas into working projects.
-<div align="center">
-~/ toolbox
-<img src="https://skillicons.dev/icons?i=cpp,java,js,react,nextjs,nodejs,git,github,vscode,html,css&perline=11" alt="tech stack"> </div>
-<div align="center">
-~/ skill radar
-<table> <tr> <td width="50%" align="center" valign="middle"> <h3>Skills</h3> <picture> <source media="(prefers-color-scheme: dark)" srcset="assets/radar-dark.svg"> <source media="(prefers-color-scheme: light)" srcset="assets/radar-light.svg"> <img src="assets/radar-dark.svg" width="400" alt="Skill radar chart"> </picture> </td> <td width="50%" align="center" valign="middle"> <h3>Languages</h3> <picture> <source media="(prefers-color-scheme: dark)" srcset="assets/radar-langs-dark.svg"> <source media="(prefers-color-scheme: light)" srcset="assets/radar-langs-light.svg"> <img src="assets/radar-langs-dark.svg" width="400" alt="Programming language radar chart"> </picture> </td> </tr> </table> </div>
-<div align="center">
-~/ contribution calendar
-<img src="assets/metrics.isocalendar.svg" width="90%" alt="GitHub contribution calendar">
+Hi, I'm Kunwardeep Singh, a Computer Science Engineering student passionate about
+programming, problem solving, web development, and building useful projects.
 
-<br><br>
+- 📊 Currently improving my Data Structures & Algorithms skills
+- 💻 Interested in Web Development and Software Development
+- 🧩 Regularly solving problems on LeetCode
+- 🚀 Learning new technologies and building projects
+- 🔗 LinkedIn: [kunwardeep-singh-dev](https://linkedin.com/in/kunwardeep-singh-dev)
+- 📧 Email: [kunwardeepsingh797@gmail.com](mailto:kunwardeepsingh797@gmail.com)
+- 💡 Fun fact: I enjoy solving challenging problems and turning ideas into working projects.
 
-<picture> <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/scabber098/scabber098/output/snake-dark.svg"> <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/scabber098/scabber098/output/snake.svg"> <img src="https://raw.githubusercontent.com/scabber098/scabber098/output/snake.svg" width="100%" alt="Snake eating GitHub contribution graph"> </picture> </div>
+---
+
+## ~/ toolbox
+
 <div align="center">
-~/ the numbers
-<picture> <source media="(prefers-color-scheme: dark)" srcset="assets/card-stats-dark.svg"> <source media="(prefers-color-scheme: light)" srcset="assets/card-stats-light.svg"> <img src="assets/card-stats-dark.svg" width="480" alt="GitHub statistics"> </picture> <br> <img src="assets/metrics.languages.svg" height="165" alt="Most used programming languages">
 
-<br><br>
+![C++](https://skillicons.dev/icons?i=cpp)
+![Java](https://skillicons.dev/icons?i=java)
+![JavaScript](https://skillicons.dev/icons?i=js)
+![React](https://skillicons.dev/icons?i=react)
+![Next.js](https://skillicons.dev/icons?i=nextjs)
+![Figma](https://skillicons.dev/icons?i=figma)
+![Git](https://skillicons.dev/icons?i=git)
+![GitHub](https://skillicons.dev/icons?i=github)
+![VS Code](https://skillicons.dev/icons?i=vscode)
+![HTML5](https://skillicons.dev/icons?i=html)
+![CSS3](https://skillicons.dev/icons?i=css)
 
-<img src="assets/metrics.achievements.svg" width="90%" alt="GitHub achievements"> </div>
+</div>
+
+---
+
+## ~/ skill radar
+
 <div align="center">
-~/ selected work
-<table> <tr> <td width="50%"> <a href="https://github.com/scabber098/Leetcode"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=scabber098&repo=Leetcode&theme=github_dark&hide_border=true" alt="Leetcode"> </a> </td> <td width="50%"> <a href="https://github.com/scabber098/LogPilot-AI"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=scabber098&repo=LogPilot-AI&theme=github_dark&hide_border=true" alt="LogPilot-AI"> </a> </td> </tr> <tr> <td width="50%"> <a href="https://github.com/scabber098/EduScope"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=scabber098&repo=EduScope&theme=github_dark&hide_border=true" alt="EduScope"> </a> </td> <td width="50%"> <a href="https://github.com/scabber098/ScabClips"> <img src="https://github-readme-stats.vercel.app/api/pin/?username=scabber098&repo=ScabClips&theme=github_dark&hide_border=true" alt="ScabClips"> </a> </td> </tr> </table> </div>
-<div align="center">
-~/ coding profiles
-<a href="https://leetcode.com/u/kunwar_7/"> <img src="https://img.shields.io/badge/LeetCode-kunwar__7-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"> </a> <a href="https://www.linkedin.com/in/kunwardeep-singh-dev"> <img src="https://img.shields.io/badge/LinkedIn-Kunwardeep%20Singh-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"> </a> <a href="mailto:kunwardeepsingh797@gmail.com"> <img src="https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"> </a> </div>
-<div align="center">
-Thanks for visiting! 👨‍💻
+<table>
+<tr>
+<td>
 
-<sub>Always learning. Always building. Always improving.</sub>
+**Skills**
 
-</div> ```
+![Skills Radar](https://quickchart.io/chart?bkg=transparent&c={type:'radar',data:{labels:['Problem+Solving','DSA','Web+Dev','Backend','Databases','Tools+%26+DevOps'],datasets:[{label:'Skills',data:[90,85,80,70,65,75],backgroundColor:'rgba(46,204,113,0.3)',borderColor:'rgba(46,204,113,1)',pointBackgroundColor:'rgba(46,204,113,1)'}]},options:{legend:{display:false},scale:{ticks:{display:false,beginAtZero:true,max:100},gridLines:{color:'%23444'},angleLines:{color:'%23444'},pointLabels:{fontColor:'%23ffffff'}}}})
+
+</td>
+<td>
+
+**Languages**
+
+![Languages Radar](https://quickchart.io/chart?bkg=transparent&c={type:'radar',data:{labels:['JavaScript','Python','Java','C%2B%2B','TypeScript','HTML%2FCSS'],datasets:[{label:'Languages',data:[85,70,80,90,60,88],backgroundColor:'rgba(52,152,219,0.3)',borderColor:'rgba(52,152,219,1)',pointBackgroundColor:'rgba(52,152,219,1)'}]},options:{legend:{display:false},scale:{ticks:{display:false,beginAtZero:true,max:100},gridLines:{color:'%23444'},angleLines:{color:'%23444'},pointLabels:{fontColor:'%23ffffff'}}}})
+
+</td>
+</tr>
+</table>
+</div>
+
+> Edit the `data` arrays in each QuickChart URL above to reflect your real self-assessed skill levels (0–100).
+
+---
+
+## ~/ contribution calendar
+
+<div align="center">
+
+![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=scabber098&theme=react-dark&hide_border=true&bg_color=0d1117)
+
+![Snake animation](https://raw.githubusercontent.com/scabber098/scabber098/output/github-contribution-grid-snake.svg)
+
+</div>
+
+> ⚠️ The snake animation needs a **one-time GitHub Actions setup** — see the note at the bottom of this message.
+
+---
+
+## ~/ my projects
+
+<div align="center">
+<table>
+<tr>
+<td width="50%">
+
+**[LeetCode Solutions](https://github.com/scabber098/leetcode)**
+My solutions to LeetCode problems to improve DSA skills.
+⭐ – &nbsp;&nbsp; 🍴 Forks – &nbsp;&nbsp; 📖 Public
+
+</td>
+<td width="50%">
+
+**[LogPilot-AI](https://github.com/scabber098/LogPilot-AI)**
+AI-powered log monitoring and analysis platform.
+⭐ – &nbsp;&nbsp; 🍴 Forks – &nbsp;&nbsp; 📖 Public
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+**[EduScope](https://github.com/scabber098/EduScope)**
+Educational platform to simplify learning and collaboration.
+⭐ – &nbsp;&nbsp; 🍴 Forks – &nbsp;&nbsp; 📖 Public
+
+</td>
+<td width="50%">
+
+**[ScabClips](https://github.com/scabber098/ScabClips)**
+Short video clips platform for sharing and discovering content.
+⭐ – &nbsp;&nbsp; 🍴 Forks – &nbsp;&nbsp; 📖 Public
+
+</td>
+</tr>
+</table>
+</div>
+
+---
+
+## ~/ coding profiles
+
+<div align="center">
+
+[![LeetCode](https://img.shields.io/badge/LeetCode-kunwar__7-FFA116?style=flat-square&logo=leetcode&logoColor=black)](https://leetcode.com/kunwar_7)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Kunwardeep%20Singh-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/kunwardeep-singh-dev)
+[![Email](https://img.shields.io/badge/Email-kunwardeepsingh797%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:kunwardeepsingh797@gmail.com)
+
+</div>
+
+---
+
+<div align="center">
+
+### Thanks for visiting! 👋
+
+*Always learning. Always building. Always improving.*
+
+</div>
