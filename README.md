@@ -68,11 +68,11 @@ Hi, I'm **Kunwardeep Singh**, a Computer Science student interested in building 
 
 ### 💻 Language Reality
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/radar-langs-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/radar-langs-light.svg">
-  <img src="assets/radar-langs-dark.svg" width="400" alt="GitHub Language Radar">
-</picture>
+<img
+  src="assets/language-radar.svg"
+  width="400"
+  alt="GitHub Language Radar"
+/>
 
 </td>
 
@@ -83,11 +83,15 @@ Hi, I'm **Kunwardeep Singh**, a Computer Science student interested in building 
 
 ## 📈 GitHub Activity
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/metrics-light.svg">
-  <img src="assets/metrics-dark.svg" width="100%" alt="GitHub Metrics">
-</picture>
+<div align="center">
+
+<img
+  src="https://github-readme-stats.vercel.app/api?username=scabber098&show_icons=true&theme=tokyonight&hide_border=true"
+  width="100%"
+  alt="GitHub Metrics"
+/>
+
+</div>
 
 ---
 
@@ -96,14 +100,21 @@ Hi, I'm **Kunwardeep Singh**, a Computer Science student interested in building 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"
-          srcset="https://raw.githubusercontent.com/scabber098/scabber098/output/snake-dark.svg">
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/scabber098/scabber098/output/snake-dark.svg"
+  >
 
-  <source media="(prefers-color-scheme: light)"
-          srcset="https://raw.githubusercontent.com/scabber098/scabber098/output/snake-light.svg">
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/scabber098/scabber098/output/snake-light.svg"
+  >
 
-  <img alt="GitHub Contribution Snake"
-       src="https://raw.githubusercontent.com/scabber098/scabber098/output/snake-dark.svg">
+  <img
+    alt="GitHub Contribution Snake"
+    src="https://raw.githubusercontent.com/scabber098/scabber098/output/snake-dark.svg"
+  >
+
 </picture>
 
 </div>
@@ -135,15 +146,22 @@ Hi, I'm **Kunwardeep Singh**, a Computer Science student interested in building 
 <a href="https://github.com/scabber098/Leetcode">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"
-          srcset="assets/card-Leetcode-dark.svg">
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="assets/card-Leetcode-dark.svg"
+  >
 
-  <source media="(prefers-color-scheme: light)"
-          srcset="assets/card-Leetcode-light.svg">
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="assets/card-Leetcode-light.svg"
+  >
 
-  <img src="assets/card-Leetcode-dark.svg"
-       width="420"
-       alt="Leetcode">
+  <img
+    src="assets/card-Leetcode-dark.svg"
+    width="420"
+    alt="Leetcode"
+  >
+
 </picture>
 
 </a>
@@ -155,15 +173,22 @@ Hi, I'm **Kunwardeep Singh**, a Computer Science student interested in building 
 <a href="https://github.com/scabber098/LogPilot-AI">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"
-          srcset="assets/card-LogPilot-AI-dark.svg">
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="assets/card-LogPilot-AI-dark.svg"
+  >
 
-  <source media="(prefers-color-scheme: light)"
-          srcset="assets/card-LogPilot-AI-light.svg">
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="assets/card-LogPilot-AI-light.svg"
+  >
 
-  <img src="assets/card-LogPilot-AI-dark.svg"
-       width="420"
-       alt="LogPilot-AI">
+  <img
+    src="assets/card-LogPilot-AI-dark.svg"
+    width="420"
+    alt="LogPilot-AI"
+  >
+
 </picture>
 
 </a>
@@ -179,15 +204,22 @@ Hi, I'm **Kunwardeep Singh**, a Computer Science student interested in building 
 <a href="https://github.com/scabber098/ScabClips">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"
-          srcset="assets/card-ScabClips-dark.svg">
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="assets/card-ScabClips-dark.svg"
+  >
 
-  <source media="(prefers-color-scheme: light)"
-          srcset="assets/card-ScabClips-light.svg">
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="assets/card-ScabClips-light.svg"
+  >
 
-  <img src="assets/card-ScabClips-dark.svg"
-       width="420"
-       alt="ScabClips">
+  <img
+    src="assets/card-ScabClips-dark.svg"
+    width="420"
+    alt="ScabClips"
+  >
+
 </picture>
 
 </a>
@@ -199,15 +231,22 @@ Hi, I'm **Kunwardeep Singh**, a Computer Science student interested in building 
 <a href="https://github.com/scabber098/EduScope">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"
-          srcset="assets/card-EduScope-dark.svg">
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="assets/card-EduScope-dark.svg"
+  >
 
-  <source media="(prefers-color-scheme: light)"
-          srcset="assets/card-EduScope-light.svg">
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="assets/card-EduScope-light.svg"
+  >
 
-  <img src="assets/card-EduScope-dark.svg"
-       width="420"
-       alt="EduScope">
+  <img
+    src="assets/card-EduScope-dark.svg"
+    width="420"
+    alt="EduScope"
+  >
+
 </picture>
 
 </a>
@@ -220,16 +259,12 @@ Hi, I'm **Kunwardeep Singh**, a Computer Science student interested in building 
 
 ---
 
-<sub>
-
 | Project | Description |
 |---|---|
 | 🧠 [Leetcode](https://github.com/scabber098/Leetcode) | Data Structures and Algorithms problem-solving repository |
 | 🤖 [LogPilot-AI](https://github.com/scabber098/LogPilot-AI) | AI-focused Python project |
 | 🎬 [ScabClips](https://github.com/scabber098/ScabClips) | TypeScript-based development project |
 | 🎓 [EduScope](https://github.com/scabber098/EduScope) | Real-time classroom polling and quiz platform with AI insights |
-
-</sub>
 
 ---
 
