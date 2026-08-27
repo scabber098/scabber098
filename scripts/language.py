@@ -1,5 +1,4 @@
 import json
-import math
 import os
 import urllib.request
 
@@ -11,6 +10,7 @@ RADIUS = 220
 
 
 def polar_to_cartesian(angle, radius):
+    import math
     x = CX + radius * math.cos(angle)
     y = CY + radius * math.sin(angle)
     return x, y
@@ -20,92 +20,95 @@ def get_languages():
     repo = os.environ.get("GITHUB_REPOSITORY")
 
     if not repo:
-        return {}
+        raise ValueError("GITHUB_REPOSITORY environment variable not found")
 
     url = f"https://api.github.com/repos/{repo}/languages"
 
+    headers = {
+        "Accept": "application/vnd.github+json",
+        "User-Agent": "GitHub-Actions"
+    }
+
+    token = os.environ.get("GITHUB_TOKEN")
+
+    if token:
+        headers["Authorization"] = f"Bearer {token}"
+
     request = urllib.request.Request(
         url,
-        headers={
-            "Accept": "application/vnd.github+json",
-            "Authorization": f"Bearer {os.environ.get('GITHUB_TOKEN', '')}",
-            "User-Agent": "GitHub-Actions"
-        }
+        headers=headers
     )
 
     with urllib.request.urlopen(request) as response:
-        return json.load(response)
+        return json.loads(response.read().decode())
 
 
 def create_language_radar():
-    languages = get_languages()
+    data = get_languages()
 
-    if not languages:
-        languages = {
-            "Java": 80,
-            "Python": 60,
-            "JavaScript": 50,
-            "C++": 40
-        }
+    labels = list(data.keys())
+    values = list(data.values())
 
-    languages = dict(
-        sorted(
-            languages.items(),
-            key=lambda item: item[1],
-            reverse=True
-        )[:6]
-    )
+    if not labels:
+        raise ValueError("No programming languages found")
 
-    labels = list(languages.keys())
-    values = list(languages.values())
+    total = sum(values)
 
-    maximum = max(values)
-    normalized_values = [
-        (value / maximum) * RADIUS
+    percentages = [
+        round((value / total) * 100, 1)
         for value in values
     ]
 
+    import math
+
     count = len(labels)
 
-    svg = []
+    angles = [
+        (2 * math.pi * i / count) - math.pi / 2
+        for i in range(count)
+    ]
 
-    svg.append(
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{WIDTH}" height="{HEIGHT}">'
-    )
+    grid_lines = []
 
-    svg.append(
-        '<rect width="100%" height="100%" fill="#0d1117"/>'
-    )
-
-    svg.append(
-        '<text x="400" y="60" text-anchor="middle" '
-        'fill="#f0f6fc" font-size="32" font-family="Arial" font-weight="bold">'
-        'GitHub Language Radar</text>'
-    )
-
-    for level in range(1, 6):
+    for level in [0.25, 0.5, 0.75, 1]:
         points = []
 
-        for i in range(count):
-            angle = -math.pi / 2 + (2 * math.pi * i / count)
-            radius = RADIUS * level / 5
-            x, y = polar_to_cartesian(angle, radius)
-            points.append(f"{x},{y}")
+        for angle in angles:
+            x, y = polar_to_cartesian(
+                angle,
+                RADIUS * level
+            )
 
-        svg.append(
+            points.append(f"{x:.1f},{y:.1f}")
+
+        points.append(points[0])
+
+        grid_lines.append(
             f'<polygon points="{" ".join(points)}" '
-            'fill="none" stroke="#30363d" stroke-width="2"/>'
+            f'fill="none" stroke="#334155" '
+            f'stroke-width="2"/>'
         )
 
-    for i in range(count):
-        angle = -math.pi / 2 + (2 * math.pi * i / count)
+    data_points = []
 
-        x, y = polar_to_cartesian(angle, RADIUS)
+    for angle, percentage in zip(angles, percentages):
+        radius = RADIUS * (percentage / 100)
 
-        svg.append(
-            f'<line x1="{CX}" y1="{CY}" '
-            f'x2="{x}" y2="{y}" '
-            'stroke="#30363d" stroke-width="2"/>'
+        x, y = polar_to_cartesian(
+            angle,
+            radius
+        )
+
+        data_points.append(f"{x:.1f},{y:.1f}")
+
+    data_points.append(data_points[0])
+
+    axes = []
+
+    for angle, label in zip(angles, labels):
+        x, y = polar_to_cartesian(
+            angle,
+            RADIUS
         )
 
         label_x, label_y = polar_to_cartesian(
@@ -113,40 +116,55 @@ def create_language_radar():
             RADIUS + 45
         )
 
-        svg.append(
-            f'<text x="{label_x}" y="{label_y}" '
-            'text-anchor="middle" fill="#8b949e" '
-            'font-size="18" font-family="Arial">'
-            f'{labels[i]}</text>'
+        axes.append(
+            f'<line x1="{CX}" y1="{CY}" '
+            f'x2="{x:.1f}" y2="{y:.1f}" '
+            f'stroke="#334155" stroke-width="2"/>'
         )
 
-    data_points = []
-
-    for i in range(count):
-        angle = -math.pi / 2 + (2 * math.pi * i / count)
-
-        x, y = polar_to_cartesian(
-            angle,
-            normalized_values[i]
+        axes.append(
+            f'<text x="{label_x:.1f}" '
+            f'y="{label_y:.1f}" '
+            f'fill="#cbd5e1" '
+            f'font-size="18" '
+            f'text-anchor="middle">'
+            f'{label}'
+            f'</text>'
         )
 
-        data_points.append(f"{x},{y}")
+    svg = f"""<svg
+xmlns="http://www.w3.org/2000/svg"
+width="{WIDTH}"
+height="{HEIGHT}"
+viewBox="0 0 {WIDTH} {HEIGHT}">
 
-    svg.append(
-        f'<polygon points="{" ".join(data_points)}" '
-        'fill="#58a6ff" fill-opacity="0.25" '
-        'stroke="#58a6ff" stroke-width="4"/>'
-    )
+<rect
+width="100%"
+height="100%"
+fill="#0d1117"/>
 
-    for point in data_points:
-        x, y = point.split(",")
+<text
+x="{CX}"
+y="70"
+fill="#ffffff"
+font-size="32"
+font-weight="bold"
+text-anchor="middle">
+GitHub Language Radar
+</text>
 
-        svg.append(
-            f'<circle cx="{x}" cy="{y}" r="6" '
-            'fill="#58a6ff"/>'
-        )
+{"".join(grid_lines)}
 
-    svg.append('</svg>')
+{"".join(axes)}
+
+<polygon
+points="{" ".join(data_points)}"
+fill="#38bdf8"
+fill-opacity="0.35"
+stroke="#38bdf8"
+stroke-width="4"/>
+
+</svg>"""
 
     os.makedirs("assets", exist_ok=True)
 
@@ -155,7 +173,7 @@ def create_language_radar():
         "w",
         encoding="utf-8"
     ) as file:
-        file.write("\n".join(svg))
+        file.write(svg)
 
     print("Created assets/language-radar.svg")
 
