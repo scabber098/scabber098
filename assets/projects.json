@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Leetcode",
+    "description": "Data Structures and Algorithms problem-solving repository",
+    "repo": "https://github.com/scabber098/Leetcode"
+  },
+  {
+    "name": "LogPilot-AI",
+    "description": "AI-focused Python project",
+    "repo": "https://github.com/scabber098/LogPilot-AI"
+  },
+  {
+    "name": "ScabClips",
+    "description": "TypeScript-based development project",
+    "repo": "https://github.com/scabber098/ScabClips"
+  },
+  {
+    "name": "EduScope",
+    "description": "Real-time classroom polling and quiz platform with AI insights",
+    "repo": "https://github.com/scabber098/EduScope"
+  }
+]
