@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="650" viewBox="0 0 800 650">
+<rect width="100%" height="100%" fill="#ffffff" rx="20"/>
+<text x="400" y="60" text-anchor="middle" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#24292f">Skill Radar</text>
+<polygon points="400.0,275.0 447.6313972081441,302.5 447.6313972081441,357.5 400.0,385.0 352.3686027918559,357.5 352.3686027918559,302.5" fill="none" stroke="#d0d7de" stroke-width="2"/>
+<polygon points="400.0,220.0 495.2627944162882,275.0 495.2627944162883,385.0 400.0,440.0 304.7372055837118,385.00000000000006 304.7372055837118,275.0" fill="none" stroke="#d0d7de" stroke-width="2"/>
+<polygon points="400.0,165.0 542.8941916244323,247.5 542.8941916244323,412.5 400.0,495.0 257.1058083755677,412.50000000000006 257.1058083755676,247.5" fill="none" stroke="#d0d7de" stroke-width="2"/>
+<polygon points="400.0,110.0 590.5255888325764,220.0 590.5255888325765,439.99999999999994 400.0,550.0 209.47441116742354,440.00000000000006 209.4744111674235,219.99999999999997" fill="none" stroke="#d0d7de" stroke-width="2"/>
+<line x1="400" y1="330" x2="400.0" y2="110.0" stroke="#d0d7de" stroke-width="2"/>
+<line x1="400" y1="330" x2="590.5255888325764" y2="220.0" stroke="#d0d7de" stroke-width="2"/>
+<line x1="400" y1="330" x2="590.5255888325765" y2="439.99999999999994" stroke="#d0d7de" stroke-width="2"/>
+<line x1="400" y1="330" x2="400.0" y2="550.0" stroke="#d0d7de" stroke-width="2"/>
+<line x1="400" y1="330" x2="209.47441116742354" y2="440.00000000000006" stroke="#d0d7de" stroke-width="2"/>
+<line x1="400" y1="330" x2="209.4744111674235" y2="219.99999999999997" stroke="#d0d7de" stroke-width="2"/>
+<polygon points="400.0,143.0 552.4204710660612,242.0 542.8941916244323,412.5 400.0,506.0 266.63208781719646,407.00000000000006 266.63208781719646,253.0" fill="#38bdf8" fill-opacity="0.30" stroke="#0284c7" stroke-width="4"/>
+<circle cx="400.0" cy="143.0" r="7" fill="#0284c7"/>
+<circle cx="552.4204710660612" cy="242.0" r="7" fill="#0284c7"/>
+<circle cx="542.8941916244323" cy="412.5" r="7" fill="#0284c7"/>
+<circle cx="400.0" cy="506.0" r="7" fill="#0284c7"/>
+<circle cx="266.63208781719646" cy="407.00000000000006" r="7" fill="#0284c7"/>
+<circle cx="266.63208781719646" cy="253.0" r="7" fill="#0284c7"/>
+<text x="400.0" y="65.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#24292f">DSA</text>
+<text x="629.4967320028762" y="197.5" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#24292f">Java</text>
+<text x="629.4967320028762" y="462.49999999999994" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#24292f">Python</text>
+<text x="400.0" y="595.0" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#24292f">Web Dev</text>
+<text x="170.5032679971238" y="462.5000000000001" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#24292f">AI</text>
+<text x="170.50326799712377" y="197.49999999999997" text-anchor="middle" dominant-baseline="middle" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#24292f">Databases</text>
+</svg>
