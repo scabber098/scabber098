@@ -2,7 +2,6 @@ import json
 import math
 import os
 import urllib.request
-import urllib.parse
 from html import escape
 
 WIDTH = 800
@@ -29,132 +28,182 @@ def github_request(url):
     )
 
     with urllib.request.urlopen(request) as response:
-        return json.loads(response.read().decode())
-
-
-def get_all_repositories(owner):
-    repositories = []
-    page = 1
-
-    while True:
-        url = (
-            f"https://api.github.com/users/"
-            f"{urllib.parse.quote(owner)}/repos"
-            f"?per_page=100&page={page}"
+        return json.loads(
+            response.read().decode("utf-8")
         )
-
-        data = github_request(url)
-
-        if not data:
-            break
-
-        repositories.extend(data)
-
-        if len(data) < 100:
-            break
-
-        page += 1
-
-    return repositories
 
 
 def get_languages():
-    repository = os.environ.get("GITHUB_REPOSITORY")
+    repository = os.environ.get(
+        "GITHUB_REPOSITORY"
+    )
 
     if not repository:
         raise ValueError(
-            "GITHUB_REPOSITORY environment variable not found"
+            "GITHUB_REPOSITORY not found"
         )
 
     owner = repository.split("/")[0]
 
-    repositories = get_all_repositories(owner)
-
     language_totals = {}
 
-    for repo in repositories:
+    page = 1
 
-        if repo.get("fork"):
-            continue
+    while True:
+        repos_url = (
+            f"https://api.github.com/users/"
+            f"{owner}/repos"
+            f"?per_page=100&page={page}"
+        )
 
-        languages_url = repo.get("languages_url")
+        repositories = github_request(
+            repos_url
+        )
 
-        if not languages_url:
-            continue
+        if not repositories:
+            break
 
-        try:
-            languages = github_request(languages_url)
+        for repo in repositories:
 
-            for language, bytes_count in languages.items():
-                language_totals[language] = (
-                    language_totals.get(language, 0)
-                    + bytes_count
+            if repo.get("fork"):
+                continue
+
+            repo_name = repo.get("name")
+
+            if not repo_name:
+                continue
+
+            languages_url = (
+                f"https://api.github.com/repos/"
+                f"{owner}/{repo_name}/languages"
+            )
+
+            try:
+                languages = github_request(
+                    languages_url
                 )
 
-        except Exception as error:
-            print(
-                f"Skipping {repo.get('name')}: {error}"
-            )
+                print(
+                    f"{repo_name}: "
+                    f"{list(languages.keys())}"
+                )
+
+                for language, value in languages.items():
+
+                    language_totals[language] = (
+                        language_totals.get(
+                            language,
+                            0
+                        )
+                        + value
+                    )
+
+            except Exception as error:
+                print(
+                    f"Skipping {repo_name}: "
+                    f"{error}"
+                )
+
+        if len(repositories) < 100:
+            break
+
+        page += 1
+
+    print(
+        "TOTAL LANGUAGES:",
+        language_totals
+    )
 
     return language_totals
 
 
-def polar_to_cartesian(angle, radius):
-    x = CX + radius * math.cos(angle)
-    y = CY + radius * math.sin(angle)
+def polar_to_cartesian(
+    angle,
+    radius
+):
+    x = CX + radius * math.cos(
+        angle
+    )
+
+    y = CY + radius * math.sin(
+        angle
+    )
 
     return x, y
 
 
 def create_language_radar():
+
     data = get_languages()
 
     if not data:
         raise ValueError(
-            "No programming languages found"
+            "No languages found"
         )
 
     sorted_languages = sorted(
         data.items(),
         key=lambda item: item[1],
         reverse=True
-    )
-
-    # Keep the chart readable
-    sorted_languages = sorted_languages[:6]
+    )[:6]
 
     labels = [
-        language
-        for language, _ in sorted_languages
+        item[0]
+        for item in sorted_languages
     ]
 
     values = [
-        value
-        for _, value in sorted_languages
+        item[1]
+        for item in sorted_languages
     ]
 
-    total = sum(values)
+    # IMPORTANT:
+    # Normalizing against the largest language
+    # makes the radar visible even if one language
+    # dominates the repository.
+    maximum = max(values)
 
     percentages = [
-        (value / total) * 100
+        max(
+            (value / maximum) * 100,
+            15
+        )
         for value in values
     ]
 
     count = len(labels)
 
-    angles = [
-        (2 * math.pi * i / count)
-        - math.pi / 2
-        for i in range(count)
-    ]
+    if count < 3:
+
+        raise ValueError(
+            "Less than 3 languages found. "
+            f"Detected: {labels}"
+        )
+
+    angles = []
+
+    for i in range(count):
+
+        angle = (
+            (2 * math.pi * i / count)
+            - math.pi / 2
+        )
+
+        angles.append(angle)
 
     grid_lines = []
 
-    for level in [0.25, 0.5, 0.75, 1]:
+    for level in [
+        0.25,
+        0.50,
+        0.75,
+        1.00
+    ]:
 
         points = []
 
         for angle in angles:
+
             x, y = polar_to_cartesian(
                 angle,
                 RADIUS * level
@@ -164,10 +213,13 @@ def create_language_radar():
                 f"{x:.1f},{y:.1f}"
             )
 
-        points.append(points[0])
+        points.append(
+            points[0]
+        )
 
         grid_lines.append(
-            f'<polygon points="{" ".join(points)}" '
+            f'<polygon '
+            f'points="{" ".join(points)}" '
             f'fill="none" '
             f'stroke="#334155" '
             f'stroke-width="2"/>'
@@ -175,16 +227,21 @@ def create_language_radar():
 
     axes = []
 
-    for angle, label in zip(angles, labels):
+    for angle, label in zip(
+        angles,
+        labels
+    ):
 
         x, y = polar_to_cartesian(
             angle,
             RADIUS
         )
 
-        label_x, label_y = polar_to_cartesian(
-            angle,
-            RADIUS + 40
+        label_x, label_y = (
+            polar_to_cartesian(
+                angle,
+                RADIUS + 45
+            )
         )
 
         axes.append(
@@ -217,20 +274,15 @@ def create_language_radar():
         percentages
     ):
 
-        chart_radius = (
-            RADIUS * percentage / 100
-        )
-
-        # Give very small languages
-        # a minimum visible value
-        chart_radius = max(
-            chart_radius,
-            RADIUS * 0.08
+        radius = (
+            RADIUS
+            * percentage
+            / 100
         )
 
         x, y = polar_to_cartesian(
             angle,
-            chart_radius
+            radius
         )
 
         data_points.append(
@@ -241,21 +293,22 @@ def create_language_radar():
         data_points[0]
     )
 
-    circles = []
+    dots = []
 
     for point in data_points[:-1]:
+
         x, y = point.split(",")
 
-        circles.append(
+        dots.append(
             f'<circle '
             f'cx="{x}" '
             f'cy="{y}" '
-            f'r="6" '
+            f'r="5" '
             f'fill="#38bdf8"/>'
         )
 
-    svg = f"""<svg
-xmlns="http://www.w3.org/2000/svg"
+    svg = f"""
+<svg xmlns="http://www.w3.org/2000/svg"
 width="{WIDTH}"
 height="{HEIGHT}"
 viewBox="0 0 {WIDTH} {HEIGHT}">
@@ -267,7 +320,7 @@ fill="#0d1117"/>
 
 <text
 x="{CX}"
-y="65"
+y="70"
 fill="#ffffff"
 font-size="32"
 font-family="Arial, sans-serif"
@@ -287,7 +340,7 @@ fill-opacity="0.30"
 stroke="#38bdf8"
 stroke-width="4"/>
 
-{"".join(circles)}
+{"".join(dots)}
 
 </svg>
 """
@@ -302,10 +355,12 @@ stroke-width="4"/>
         "w",
         encoding="utf-8"
     ) as file:
+
         file.write(svg)
 
     print(
-        "Created assets/radar-langs-dark.svg"
+        "Created "
+        "assets/radar-langs-dark.svg"
     )
 
 
