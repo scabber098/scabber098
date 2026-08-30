@@ -1,0 +1,35 @@
+name: update leetcode stats
+
+on:
+  schedule:
+    # every day at 00:30 UTC (offset from the snake job to avoid both racing at :00)
+    - cron: "30 0 * * *"
+  workflow_dispatch: {}
+  push:
+    branches:
+      - main
+    paths:
+      - "gen/build_leetcode_stats.py"
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: generate leetcode-stats.svg
+        env:
+          LEETCODE_USERNAME: kunwar_7
+        run: python gen/build_leetcode_stats.py
+
+      - name: commit if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update LeetCode stats"
+          file_pattern: leetcode-stats.svg

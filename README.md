@@ -15,6 +15,12 @@
 <a href="mailto:kunwardeepsingh797@gmail.com">
   <img src="https://img.shields.io/badge/Email-kunwardeepsingh797%40gmail.com-a855f7?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
 </a>
+<a href="https://www.linkedin.com/in/kunwardeep-singh-dev/">
+  <img src="https://img.shields.io/badge/LinkedIn-kunwardeep--singh--dev-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+</a>
+<a href="https://leetcode.com/kunwar_7/">
+  <img src="https://img.shields.io/badge/LeetCode-kunwar__7-FFA116?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode">
+</a>
 <a href="https://github.com/scabber098">
   <img src="https://img.shields.io/github/followers/scabber098?style=for-the-badge&color=ff6ec7&labelColor=0b0f2e&logo=github&logoColor=white" alt="GitHub followers">
 </a>
@@ -28,7 +34,7 @@
 
 - 🚀 Full Stack Web Developer who enjoys turning ideas into working products, front end to back end.
 - 🛠️ Comfortable across **C++, Java, Python, JavaScript/TypeScript**, and the **MERN** stack.
-- 📚 Sharpening **Data Structures & Algorithms** daily — always chasing a cleaner solution.
+- 📚 Sharpening **Data Structures & Algorithms** daily on [LeetCode](https://leetcode.com/kunwar_7/) — always chasing a cleaner solution.
 - 🌱 Currently exploring system design and scalable backend architecture.
 - 💬 Ask me about React, Node.js, or why the code worked on my machine.
 - ⚡ Fun fact: *code, coffee, repeat* is not a joke, it's my actual daily loop.
@@ -41,14 +47,26 @@
 <table>
 <tr>
 <td><img src="stats.svg?v=1" alt="GitHub stats" width="100%"></td>
-<td><img src="langs.svg?v=1" alt="Most used languages" width="100%"></td>
+<td><img src="langs.svg?v=1" alt="Languages by repository" width="100%"></td>
 </tr>
 </table>
 
-<img src="trophies.svg?v=1" alt="GitHub trophies" width="94%">
+<img src="trophies.svg?v=1" alt="GitHub highlights" width="94%">
 </div>
 
-> **Note:** `stats.svg`, `langs.svg`, and `trophies.svg` are local, self-hosted cards (no third-party rate-limited services). The numbers ship as placeholders in `gen/build_stats.py`, `gen/build_langs.py`, and `gen/build_trophies.py` — plug in your real GitHub API values there and re-run the generators whenever you want to refresh them.
+> All numbers above are real, sourced from `github.com/scabber098` and refreshed by hand in `gen/build_stats.py`, `gen/build_langs.py`, and `gen/build_trophies.py` — check your profile and re-run the generators whenever you want the newest snapshot.
+
+<br/>
+
+## 🧩 LeetCode Stats
+
+<div align="center">
+
+<img src="leetcode-stats.svg?v=1" alt="LeetCode stats for kunwar_7" width="60%">
+
+</div>
+
+> Updates **automatically every day** via `.github/workflows/leetcode-stats.yml`, which pulls live totals (questions solved by difficulty + acceptance rate) straight from LeetCode's public API for [`kunwar_7`](https://leetcode.com/kunwar_7/) and commits the refreshed card back to this repo. Your existing LeetHub extension keeps syncing solved problems to your repos as before — this card is a separate, always-current stats visual on top of that.
 
 <br/>
 
@@ -72,11 +90,9 @@
 
 | Project | Description | Tech Stack | Link |
 |---|---|---|---|
-| **Project One** | Short one-line description of what it does and the problem it solves. | React · Node.js · MongoDB | [Repo](https://github.com/scabber098) |
-| **Project Two** | Short one-line description of what it does and the problem it solves. | Python · Flask · PostgreSQL | [Repo](https://github.com/scabber098) |
-| **Project Three** | Short one-line description of what it does and the problem it solves. | C++ · DSA visualizer | [Repo](https://github.com/scabber098) |
-
-*Swap these rows with your real repositories — name, one-liner, stack, and link.*
+| **LogPilot AI** | AI-powered observability backend — watches app logs in real time, and the moment an error hits, an LLM (Llama 3.3 70B via Groq + LangChain) reads the logs, metrics, and source file to write a structured root-cause incident report automatically. | Python · LangChain · Groq (Llama 3.3 70B) · Prometheus | [Repo](https://github.com/scabber098/LogPilot-AI) |
+| **EduScope** | Real-time classroom platform for teachers and students — teachers run live sessions and share a session code; if a student switches tabs mid-session the teacher gets notified instantly and can block that student. | React · Node.js · MongoDB · Socket.io | [Repo](https://github.com/scabber098/Eduscope) |
+| **LeetCode** | My daily DSA practice — solutions synced automatically via the LeetHub extension as I solve problems, tracked live in the stats card above. | Java · DSA | [Repo](https://github.com/scabber098/Leetcode) |
 
 </div>
 
