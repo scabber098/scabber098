@@ -28,6 +28,9 @@ jobs:
           LEETCODE_USERNAME: kunwar_7
         run: python gen/build_leetcode_stats.py
 
+      - name: pull latest changes
+        run: git pull --rebase origin main
+
       - name: commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
