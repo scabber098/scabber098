@@ -2,7 +2,6 @@ name: update leetcode stats
 
 on:
   schedule:
-    # every day at 00:30 UTC (offset from the snake job to avoid both racing at :00)
     - cron: "30 0 * * *"
   workflow_dispatch: {}
   push:
@@ -19,6 +18,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: pull latest changes
+        run: git pull --rebase origin main
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -27,9 +29,6 @@ jobs:
         env:
           LEETCODE_USERNAME: kunwar_7
         run: python gen/build_leetcode_stats.py
-
-      - name: pull latest changes
-        run: git pull --rebase origin main
 
       - name: commit if changed
         uses: stefanzweifel/git-auto-commit-action@v5
